@@ -1,0 +1,9 @@
+---
+galaxy_info:
+  author: Antoine Legrand
+  description: Configure Ferm firewall
+  license: MIT
+  min_ansible_version: 1.6
+  categories:
+    - system
+dependencies: []

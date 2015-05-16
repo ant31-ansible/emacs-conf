@@ -1,0 +1,15 @@
+---
+- name: Emacs-conf | Site-level emacs.d configuration
+  copy: src=emacs.d dest=/etc/emacs backup=yes
+  tags:
+   - emacs-conf
+
+- name: Emacs-conf | Site-level emacsrc configuration
+  copy: src=emacs.prod dest=/etc/emacs/emacs.rc backup=yes
+  tags:
+   - emacs-conf
+
+- name: Emacs-conf | Root user .emacs configuration
+  copy: src=emacs.prod dest=/root/.emacs backup=yes
+  tags:
+   - emacs-conf
